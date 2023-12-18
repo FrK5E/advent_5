@@ -16,5 +16,9 @@ def main(argv):
         vinterp = VisitorInterp()
         vinterp.visit(tree)
 
+    seeds = vinterp.getSeeds()
+    maps = vinterp.getMaps()
+    pass 
+
 if __name__ == '__main__':
     main(sys.argv)

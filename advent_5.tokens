@@ -1,0 +1,10 @@
+INT=1
+ID=2
+WS=3
+SEEDS_KEYWORD=4
+TO_KEYWORD=5
+MAP_KEYWORD=6
+MAP_ID=7
+'seeds:'=4
+'-to-'=5
+'map:'=6
