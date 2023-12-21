@@ -18,7 +18,20 @@ def main(argv):
 
     seeds = vinterp.getSeeds()
     maps = vinterp.getMaps()
-    pass 
+    
+    min = max( seeds )
+    for s in seeds:
+        k = s
+        for m in maps:
+            k = m.map_integer(k)
+
+        if k<min: 
+            min=k
+        print( f'{s} maps to {k}')
+
+    print( f'minimum mapping result is {min}') 
+    
+
 
 if __name__ == '__main__':
     main(sys.argv)
